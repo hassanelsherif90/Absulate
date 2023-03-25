@@ -1,26 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int ReadNumber()
+float ReadNumber()
 {
 	int Number;
 	cin >> Number;
-	return Number;
+	return (float) Number;
 }
 
-int Absulate(int Number)
+float Absulate(int Number)
 {
 	if (Number < 0)
 	{
 		return (Number * -1);
 	}
-	return Number;
+	return (float)Number;
 }
 
 int main()
 {
 	cout << "Please Enter : " << endl;
-	int Number = ReadNumber();
+	float Number = ReadNumber();
 	cout <<"\nMy ABS Is : " << Absulate(Number) << endl;
 	cout <<"\nC++ ABS Is : " << abs(Number) << endl;
 
